@@ -8,8 +8,8 @@
       }
     },
     {
-      "version": "4.10.0-0.nightly-2022-01-24-070025",
-      "payload": "registry.ci.openshift.org/ocp/release@sha256:87c1f0019d44107031c662a3c387bba46d1f2710909b583e5f4c0ad61cdba36e",
+      "version": "4.17.0-0.nightly-2025-05-11-085014",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:a61328692e768fe94ff1af564a3f44716506add91235607b6ff8e31185f134e4",
       "metadata": {
 	"io.openshift.upgrades.graph.release.channels": "channel-a,channel-b"
       }
