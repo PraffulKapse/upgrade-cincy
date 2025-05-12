@@ -1,5 +1,13 @@
 {
   "nodes": [
+   {
+      "version": "4.16.0-0.nightly-2025-05-07-122308",
+      "payload": "registry.svc.ci.openshift.org/ocp/release@sha256:b77030104e48cb33d24b9d3870ede268addefb3cb9f340a82a8d03f2285dc9ea",
+      "metadata": {
+        "url": "https://openshift-release.apps.ci.l2s4.p1.openshiftapps.com/releasestream/4.16.0-0.nightly/release/4.16.0-0.nightly-2025-05-09-171939",
+	"io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,nightly-4.16"
+      }
+    },
     {
       "version": "4.17.0-0.nightly-2025-05-09-171939",
       "payload": "registry.svc.ci.openshift.org/ocp/release@sha256:fe5b2b2c63798bf34d46f9d1e8854e5fd7fbc8feafe2ef925e2f8dad4c96cd11",
