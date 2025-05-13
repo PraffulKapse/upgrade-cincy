@@ -8,24 +8,24 @@
         }
       },
        {
-        "version": "4.14.0-0.nightly-2025-05-10-072408",
-        "payload": "registry.ci.openshift.org/ocp/release@sha256:ca73fe7c9169eb8a1d908938fcb7888870ad2c62f393f52ee68c63869d062033",
+        "version": "4.14.50", 
+        "payload": "quay.io/openshift-release-dev/ocp-release@sha256:a5fd4971417fc924f0f5196c104298096c835d8dc359c444cfbb028dc221889d",
         "metadata": {
-            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.16"
+            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.14"
         }
       },
        {
-        "version": "4.14.0-0.nightly-2025-05-10-140119",
-        "payload": "registry.ci.openshift.org/ocp/release@sha256:54f4945ac930b9796682cd05400b11f5b5af6e02292e8a6517121ede4e490205",
+        "version": "4.14.51",
+        "payload": "quay.io/openshift-release-dev/ocp-release@sha256:8ba5619d0cd45f27ab5f6ec4ff098620719871368b776190e77764a72b5d49b1",
         "metadata": {
-            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.16"
+            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.14"
         }
       }, 
         {
-        "version": "4.15.0-0.nightly-2025-05-08-003429",
-        "payload": "registry.ci.openshift.org/ocp/release@@sha256:e44017070100556d04cc9f73443bf6c685d1e44c10edd04486a7ca756ad89245",
+        "version": "4.15.49", 
+        "payload": "quay.io/openshift-release-dev/ocp-release@sha256:7039e7bd34fd024ff619df914528c8d85e62b847291f6684096fd4ca8dba2bbd",
         "metadata": {
-            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.17"
+            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.14"
         }
       }
     
