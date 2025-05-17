@@ -1,31 +1,32 @@
 {
     "nodes": [
+       {
+        
+        "version": "4.16.36",
+        "payload": "quay.io/openshift-release-dev/ocp-release@sha256:efab0026a48c418ff01754238aea813e24097f65ff75962147cef78d785f06f4",
+        "metadata": {
+            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.16"
+         }
+      },  
       {
-        "version": "4.14.0-0.nightly-2025-05-09-042454",
-        "payload": "registry.ci.openshift.org/ocp/release@sha256:f465305ec302d45991b215367991d11be52483a97b92c811f52f01826d168866",
+        "version": "4.16.39",
+        "payload": "quay.io/openshift-release-dev/ocp-release@sha256:2754cd66072e633063b6bf26446978102f27dd19d4668b20df2c7553ef9ee4cf",
         "metadata": {
-            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.14"
+            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.16"
         }
       },
        {
-        "version": "4.14.50", 
-        "payload": "quay.io/openshift-release-dev/ocp-release@sha256:a5fd4971417fc924f0f5196c104298096c835d8dc359c444cfbb028dc221889d",
+        "version": "4.16.40", 
+        "payload": "quay.io/openshift-release-dev/ocp-release@sha256:77260d121db0e3d6705d60a57b0da0b2063a3674c889b519f37567b7f7969b5d",
         "metadata": {
-            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.14"
-        }
-      },
-       {
-        "version": "4.14.51",
-        "payload": "quay.io/openshift-release-dev/ocp-release@sha256:8ba5619d0cd45f27ab5f6ec4ff098620719871368b776190e77764a72b5d49b1",
-        "metadata": {
-            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.14"
+            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.16"
         }
       }, 
         {
-        "version": "4.15.49", 
-        "payload": "quay.io/openshift-release-dev/ocp-release@sha256:7039e7bd34fd024ff619df914528c8d85e62b847291f6684096fd4ca8dba2bbd",
+        "version": "4.17.29", 
+        "payload": "quay.io/openshift-release-dev/ocp-release@sha256:df00d64554b9b5d860273f938e0ff3b0c4a7af8356fbd103658ebe6fa2a830c8",
         "metadata": {
-            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.14"
+            "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b,stable-4.16"
         }
       }
     
