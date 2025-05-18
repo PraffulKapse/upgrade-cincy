@@ -1,8 +1,8 @@
 {
   "nodes": [
    {
-      "version": "4.16.0-0.nightly-2025-05-12-120839",
-      "payload": "registry.build06.ci.openshift.org/ci-ln-78379z2/release@sha256:a8a3ffb4310cf07265ecc4057e5b077aa4b1af6a99ffc48201222f82bb6c00a9",
+      "version": "4.16.0-0.nightly-2025-05-16-105942",
+      "payload": "registry.build06.ci.openshift.org/ci-ln-78379z2/release@sha256:86fccf5ee5759924dc7b7b6e5bcbc63c9e81d0c11babda153d0071a5024ee44d",
       "metadata": {
         "url": "https://openshift-release.apps.ci.l2s4.p1.openshiftapps.com/releasestream/4.16.0-0.nightly/release/4.16.0-0.nightly-2025-05-12-120839",
 	"io.openshift.upgrades.graph.release.channels": "channel-a,channel-b"
