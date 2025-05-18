@@ -1,0 +1,23 @@
+{
+  "nodes": [
+   {
+      "version": "4.16.0-0.nightly-2025-05-12-120839",
+      "payload": "registry.build06.ci.openshift.org/ci-ln-78379z2/release@sha256:a8a3ffb4310cf07265ecc4057e5b077aa4b1af6a99ffc48201222f82bb6c00a9",
+      "metadata": {
+        "url": "https://openshift-release.apps.ci.l2s4.p1.openshiftapps.com/releasestream/4.16.0-0.nightly/release/4.16.0-0.nightly-2025-05-12-120839",
+	"io.openshift.upgrades.graph.release.channels": "channel-a,channel-b"
+      }
+    },
+    {
+      "version": "4.17.0-0.nightly-2025-05-12-235733",
+      "payload": "registry.svc.ci.openshift.org/ocp/release@sha256:a73d8dbbf3d8f802b59a194815f1481b3528c9c1973934412c145f8327bc9305",
+      "metadata": {
+        "url": "https://openshift-release.apps.ci.l2s4.p1.openshiftapps.com/releasestream/4.17.0-0.nightly/release/4.17.0-0.nightly-2025-05-12-235733",
+	"io.openshift.upgrades.graph.release.channels": "channel-a,channel-b"
+      }
+    }
+  ],
+  "edges": [
+    [0,1]
+  ]
+}
