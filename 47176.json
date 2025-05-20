@@ -7,6 +7,7 @@
     {
       "version": "4.17.0-0.nightly-2025-05-16-044356",
       "payload": "registry.ci.openshift.org/ocp/release@sha256:782e98cee8034a2926242612c451bfcfa0bc65f0fae4954a50fc53551e6634fe"
+    },
     {
       "version": "4.17.0-0.nightly-2025-05-16-113828",
       "payload": "registry.ci.openshift.org/ocp/sha256:f148d9e16d551ef6172775aef5e83ba2260c9e79708e921913610ac7b4a119f7"
