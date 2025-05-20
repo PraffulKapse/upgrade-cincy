@@ -11,7 +11,7 @@
       "version": "4.16.0-0.nightly-2025-05-20-073604",
       "payload": "registry.ci.openshift.org/ocp/release@ha256:166056f521a05972856120a84bc42d97354b17a7f8ca3174b7b76176e52b0b3f"
       "metadata": {
-      "io.openshift.upgrades.graph.release.channels": "nightly-4.16",
+      "io.openshift.upgrades.graph.release.channels": "nightly-4.16"
       }
     }
   ],
