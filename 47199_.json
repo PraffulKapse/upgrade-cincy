@@ -1,32 +1,29 @@
 {
   "nodes": [
     {
-      "version": "4.17.0-0.nightly-2025-05-16-113828",
-      "payload": "registry.build10.ci.openshift.org/ci-ln-hxrm9hb/release@sha256:f148d9e16d551ef6172775aef5e83ba2260c9e79708e921913610ac7b4a119f7"
+      "version": "4.15.0-0.nightly-2025-05-15-102508",
+      "payload": "registry.build10.ci.openshift.org/ci-ln-53kjbgb/release@sha256:84dd12b68fb5d256387ace34cc25a5b1b6f1716bb8ad564ffa58539531fdc6b5"
     },
     {
-      "version": "4.18.0-0.nightly-2025-05-20-050253",
-      "payload": "registry.ci.openshift.org/ocp/release@sha256:e8c7a0cdb0af27b6529117dd30df38f4a97c802d49bc99890ac421ccc6222cad"
+      "version": "4.16.0-0.nightly-2025-05-20-073604",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:166056f521a05972856120a84bc42d97354b17a7f8ca3174b7b76176e52b0b3f"
     }
   ],
-  "conditionalEdges": [
+  "conditionalEdges":[
     {
       "edges": [
-        {
-          "from": "4.17.0-0.nightly-2025-05-16-113828",
-          "to": "4.18.0-0.nightly-2025-05-20-050253"
-        }
+        {"from": "4.15.0-0.nightly-2025-05-15-102508", "to": "4.16.0-0.nightly-2025-05-20-073604"}
       ],
       "risks": [
         {
           "url": "https://invalid.com/a",
-          "name": "AlwaysPassingRule",
-          "message": "This rule always passes (up == 1)",
+          "name": "InvalidPromQL",
+          "message": "Invalid Promql",
           "matchingRules": [
             {
               "type": "PromQL",
               "promql": {
-                "promql": "up == 1"
+                "promql": "group(cluster_version_available_updates{channel=buggy})"
               }
             }
           ]
@@ -35,3 +32,4 @@
     }
   ]
 }
+
