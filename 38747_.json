@@ -9,7 +9,7 @@
     },
     {
       "version": "4.18.12",
-      "payload": "example.com@sha256:31e8978d1f7a24c3e70dcc12c93dd5e73311b78e528f73beb020ddbe3270e07d",
+      "payload": "quay.io/openshift-release-dev/ocp-release@sha256:31e8978d1f7a24c3e70dcc12c93dd5e73311b78e528f73beb020ddbe3270e07d",
       "metadata": {
         "io.openshift.upgrades.graph.release.channels": "channel-a,channel-b"
       }
