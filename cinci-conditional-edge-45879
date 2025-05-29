@@ -1,97 +1,196 @@
 {
-    "nodes": [
-      {
-        "version": "4.16.0-0.nightly-2024-05-01-111315",
-        "payload": "registry.ci.openshift.org/ocp/release@sha256:eeb02c62d7ec73433e31de1aca03270fdc0ccaadefc46163e9983153f5270462"
-      },
-      {
-        "version": "4.77.777777",
-        "payload": "registry.ci.openshift.org/ocp/release@sha256:7777777777777777777777777777777777777777777777777777777777777777"
-      },
-      {
-        "version": "4.88.888888",
-        "payload": "registry.ci.openshift.org/ocp/release@sha256:8888888888888888888888888888888888888888888888888888888888888888"
-      },
-      {
-        "version": "4.99.999999",
-        "payload": "registry.ci.openshift.org/ocp/release@sha256:9999999999999999999999999999999999999999999999999999999999999999"
+  "nodes": [
+    {
+      "version": "4.17.0-0.nightly-2025-05-28-154145",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:414d361f0e1d11347abf75bb55a01d90d5d68e2211a23087f49aad25b5904d18",
+      "metadata": {
+        "io.openshift.upgrades.graph.release.channels": "candidate-4.17"
       }
-    ],
-    "edges": [
-      [0,1],
-      [0,2],
-      [0,3]
-    ],
-    "conditionalEdges":[
-      {
-        "edges": [
-          {"from": "4.16.0-0.nightly-2024-05-01-111315", "to": "4.77.777777"}
-        ],
-        "risks": [
-          {
-            "url": "https://bug.example.com/a",
-            "name": "SomeInvokerThing",
-            "message": "On clusters on default invoker user, this imaginary bug can happen.",
-            "matchingRules": [
-              {
-                "type": "PromQL",
-                "promql": {
-                  "promql": "cluster_installer"
-                }
-              }
-            ]
-          },
-          {
-            "url": "https://bug.example.com/b",
-            "name": "SomeChannelThing",
-            "message": "On clusters with the channel set to 'buggy', this imaginary bug can happen.",
-            "matchingRules": [
-              {
-                "type": "PromQL",
-                "promql": {
-                  "promql": "group(cluster_version_available_updates{channel=\"buggy\"})\nor\n0 * group(cluster_version_available_updates{channel!=\"buggy\"})"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "edges": [
-          {"from": "4.16.0-0.nightly-2024-05-01-111315", "to": "4.88.888888"}
-        ],
-        "risks": [
-          {
-            "url": "https://openshift-release.apps.ci.l2s4.p1.openshiftapps.com/releasestream/4.10.0-0.nightly/release/4.10.0-0.nightly-2021-11-24-075634",
-            "name": "ReleaseIsRejected!",
-            "message": "Too many CI failures on this release, so do not update to it",
-            "matchingRules": [
-              {
-                "type": "Always"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "edges": [
-          {"from": "4.16.0-0.nightly-2024-05-01-111315", "to": "4.99.999999"}
-        ],
-        "risks": [
-          {
-            "url": "https://bug.example.com/c",
-            "name": "SomeInfrastructureThing",
-            "message": "Clusters on nonexist provider, this imaginary bug can happen.",
-            "matchingRules": [
-              {
-                "type": "PromQL",
-                "promql": {
-                  "promql": "cluster_infrastructure_provider{type=~\"nonexist\"}\nor\n0 * cluster_infrastructure_provider"
-                }
-              }
-            ]
-          }
-        ]
+    },
+    {
+      "version": "4.17.0-0.nightly-2025-05-29-023213",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:e9932c215307aa53a8eb7ea2680a0e7b38a55b30f7981b2d70acef5259494fd6",
+      "metadata": {
+        "io.openshift.upgrades.graph.release.channels": "candidate-4.17"
       }
-    ]
-  }
+    },
+    {
+      "version": "4.17.0-0.nightly-2025-05-29-102043",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:b5498b6c49a33d080fd30912ce506637b0b9cf97ff996ccbead8e02b981aa636",
+      "metadata": {
+        "io.openshift.upgrades.graph.release.channels": "candidate-4.17"
+      }
+    },
+    {
+      "version": "4.18.0-0.nightly-2025-05-27-204222",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:7b6dae86ef2e48bf17fcbba6e1b9ddfb9d698baa62a48cd9b015b063cbb07ed4",
+      "metadata": {
+        "io.openshift.upgrades.graph.release.channels": "candidate-4.17"
+      }
+    },
+    {
+      "version": "4.18.0-0.nightly-2025-05-28-050250",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:5e767f78fc2a13ad34833cdd830f36949ff2669ae58a42b4dfcda7b0d844163d",
+      "metadata": {
+        "io.openshift.upgrades.graph.release.channels": "candidate-4.17"
+      }
+    },
+    
+    {
+      "version": "4.18.0-0.nightly-2025-05-28-133042",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:accf930384923e68d0db1468d94d2d190486f044a6f9436a54894cbcc4e2f1c0",
+      "metadata": {
+        "io.openshift.upgrades.graph.release.channels": "candidate-4.17"
+      }
+    },
+    {
+      "version": "4.18.0-0.nightly-2025-05-28-235454",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:94716d0777b6161555fe8e10db6458bb23773bc68051188045656f72469e3067",
+      "metadata": {
+        "io.openshift.upgrades.graph.release.channels": "candidate-4.17"
+      }
+    }
+  ],
+  "edges": [
+    [0,1],
+    [0,2],
+    [0,3],
+    [0,4],
+    [0,5],
+    [0,6]
+  ],
+  "conditionalEdges":[
+    {
+      "edges": [4.17.0-0.nightly-2025-05-28-154145", "to": "4.17.0-0.nightly-2025-05-29-023213"}
+      ],
+      "risks": [
+        {
+          "url": "https://openshift-release.apps.ci.l2s4.p1.openshiftapps.com/releasestream/4.17.0-0.nightly/release/4.17.0-0.nightly-2025-05-29-023213",
+          "name": "ReleaseIsRejected",
+          "message": "ReleaseIsRejected! is invalid",
+          "matchingRules": [
+            {
+              "type": "Always"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "edges": [
+        {"from": "4.17.0-0.nightly-2025-05-28-154145", "to": "4.17.0-0.nightly-2025-05-29-102043"}
+      ],
+      "risks": [
+        {
+          "url": "https://bug.example.com/a",
+          "name": "SomeInvokerThing",
+          "message": "On clusters on default invoker user, this imaginary bug can happen.",
+          "matchingRules": [
+            {
+              "type": "PromQL",
+              "promql": {
+                "promql": "cluster_installer"
+              }
+            }
+          ]
+        },
+        {
+          "url": "https://bug.example.com/b",
+          "name": "SomeChannelThing",
+          "message": "On clusters with the channel set to 'buggy', this imaginary bug can happen.",
+          "matchingRules": [
+            {
+              "type": "PromQL",
+              "promql": {
+                "promql": "group(cluster_version_available_updates{channel=\"buggy\"})\nor\n0 * group(cluster_version_available_updates{channel!=\"buggy\"})"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "edges": [
+        {"from": "4.17.0-0.nightly-2025-05-28-154145", "to": "4.18.0-0.nightly-2025-05-27-204222"}
+      ],
+      "risks": [
+        {
+          "url": "https://bug.example.com/c",
+          "name": "SomeInfrastructureThing",
+          "message": "Clusters on nonexist provider, this imaginary bug can happen.",
+          "matchingRules": [
+            {
+              "type": "PromQL",
+              "promql": {
+                "promql": "cluster_infrastructure_provider{type=~\"nonexist\"}\nor\n0 * cluster_infrastructure_provider"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "edges": [
+        {"from": "4.17.0-0.nightly-2025-05-28-154145", "to": "4.18.0-0.nightly-2025-05-28-050250"}
+      ],
+      "risks": [
+        {
+          "url": "https://bug.example.com/d",
+          "name": "SomeVersionThing",
+          "message": "Fake version, bug https://bug.example.com/d can happen.",
+          "matchingRules": [
+            {
+              "type": "PromQL",
+              "promql": {
+                "promql": "0 * group(cluster_version)"
+              }
+            }
+          ]
+        },
+        {
+          "url": "https://bug.example.com/e",
+          "name": "SomeVersionThing1",
+          "message": "Fake version, bug https://bug.example.com/e can happen.",
+          "matchingRules": [
+            {
+              "type": "PromQL",
+              "promql": {
+                "promql": "0 * 0 * group(cluster_version)"
+              }
+            }
+          ]
+        },
+        {
+          "url": "https://bug.example.com/f",
+          "name": "SomeVersionThing2",
+          "message": "Fake version, bug https://bug.example.com/f can happen.",
+          "matchingRules": [
+            {
+              "type": "PromQL",
+              "promql": {
+                "promql": "0 * 0* 0 * group(cluster_version)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "edges": [
+        {"from": "4.17.0-0.nightly-2025-05-28-154145", "to": "4.18.0-0.nightly-2025-05-28-133042"}
+      ],
+      "risks": [
+        {
+          "url": "https://openshift-release.apps.ci.l2s4.p1.openshiftapps.com/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2025-05-28-133042",
+          "name": "ReleaseIsRejected!",
+          "message": "Too many CI failures on this release, so do not update to it",
+          "matchingRules": [
+            {
+              "type": "Always"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
