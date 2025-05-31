@@ -1,24 +1,24 @@
 {
   "nodes": [
     {
-      "version": "4.16.0-0.nightly-2025-05-16-105942",
-      "payload": "registry.build06.ci.openshift.org/ci-ln-8l130ck/release@sha256:86fccf5ee5759924dc7b7b6e5bcbc63c9e81d0c11babda153d0071a5024ee44d"
+      "version": "4.17.0-0.nightly-2025-05-29-155047",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:64a763e31f55fa67d5f146ebb09b509273b0485c8771d3d16aa8ba92f6baa92"
     },
     {
-      "version": "4.17.0-0.nightly-2025-05-16-044356",
-      "payload": "registry.ci.openshift.org/ocp/release@sha256:782e98cee8034a2926242612c451bfcfa0bc65f0fae4954a50fc53551e6634fe"
+      "version": "4.17.0-0.nightly-2025-05-29-234149",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:f57469f0707093b8184858f93dc09edc8936ce46ac478c1b80a05947740c0056"
     },
     {
-      "version": "4.17.0-0.nightly-2025-05-16-113828",
-      "payload": "registry.ci.openshift.org/ocp/sha256:f148d9e16d551ef6172775aef5e83ba2260c9e79708e921913610ac7b4a119f7"
+      "version": "4.18.0-0.nightly-2025-05-29-075806",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:806a6c4035324e545ebac5b73c4c316d691770aab0ac72827fdebc865527475e"
     },
     {
-      "version": "4.17.0-0.nightly-2023-12-19-222222",
-      "payload": "registry.ci.openshift.org/ocp/release@sha256:e385a786f122c6c0e8848ecb9901f510676438f17af8a5c4c206807a9bc0bf28"
+      "version": "4.18.0-0.nightly-2025-05-30-070035",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:dff824180d639af58b3dfd4875c51c0dec275263a9a4fc353ffea6bfd34c05d7"
     },
     {
-      "version": "4.17.0-0.nightly-2023-12-20-333333",
-      "payload": "registry.ci.openshift.org/ocp/release@sha256:caf073ce29232978c331d421c06ca5c2736ce5461962775fdd760b05fb2496a0"
+      "version": "4.18.0-0.nightly-2025-05-30-154833",
+      "payload": "registry.ci.openshift.org/ocp/release@sha256:c082c5e7fe3348c009b6869cf14b6bd9f7bc5fd9d1dd2d95a208046f653abec6"
     }
   ],
   "edges": [
@@ -30,7 +30,7 @@
   "conditionalEdges":[
     {
       "edges": [
-        {"from": "4.4.16.0-0.nightly-2025-05-16-105942", "to": "4.17.0-0.nightly-2025-05-16-044356"}
+        {"from": "4.17.0-0.nightly-2025-05-29-155047", "to": "4.17.0-0.nightly-2025-05-29-234149"}
       ],
       "risks": [
         {
@@ -63,11 +63,11 @@
     },
     {
       "edges": [
-        {"from": "4.4.16.0-0.nightly-2025-05-16-105942", "to": "4.17.0-0.nightly-2025-05-16-113828"}
+        {"from": "4.17.0-0.nightly-2025-05-29-155047", "to": "4.18.0-0.nightly-2025-05-29-075806"}
       ],
       "risks": [
         {
-          "url": "https://openshift-release.apps.ci.l2s4.p1.openshiftapps.com/releasestream/4.10.0-0.nightly/release/4.10.0-0.nightly-2021-11-24-075634",
+          "url": "https://openshift-release.apps.ci.l2s4.p1.openshiftapps.com/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2025-05-29-075806",
           "name": "ReleaseIsRejected!",
           "message": "Too many CI failures on this release, so do not update to it",
           "matchingRules": [
@@ -80,7 +80,7 @@
     },
     {
       "edges": [
-        {"from": "4.4.16.0-0.nightly-2025-05-16-105942", "to": "4.17.0-0.nightly-2023-12-19-222222"}
+        {"from": "4.17.0-0.nightly-2025-05-29-155047", "to": "4.18.0-0.nightly-2025-05-30-070035"}
       ],
       "risks": [
         {
@@ -100,7 +100,7 @@
     },
     {
       "edges": [
-        {"from": "4.4.16.0-0.nightly-2025-05-16-105942", "to": "4.17.0-0.nightly-2023-12-20-333333"}
+        {"from": "4.17.0-0.nightly-2025-05-29-155047", "to": "4.18.0-0.nightly-2025-05-30-154833"}
       ],
       "risks": [
         {
